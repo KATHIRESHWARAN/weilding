@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <style>
+    :root {
+      --primary: #6c5ce7;
+      --transition: all 0.3s ease-in-out;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .services {
+      padding: 8rem 5%;
+      background-color: white;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 4rem;
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: var(--transition);
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    .service-card p {
+      color: #555;
+    }
+    .back-to-home {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      transition: var(--transition);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .back-to-home:hover {
+      background-color: #5a4bd8;
+      transform: translateY(-3px);
+    }
+    .back-to-home span {
+      font-size: 1.3rem;
+      transition: transform 0.3s;
+    }
+    .back-to-home:hover span {
+      transform: translateX(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Custom websites that drive results and engage your audience.</p>
+      </div>
+      <div class="service-card">
+        <h3>Digital Marketing</h3>
+        <p>Targeted campaigns that increase your online presence.</p>
+      </div>
+      <div class="service-card">
+        <h3>Brand Strategy</h3>
+        <p>Comprehensive branding that tells your unique story.</p>
+      </div>
+    </div>
+  </section>
+
+  <a href="index.html" class="back-to-home"><span>&larr;</span> Home</a>
+
+</body>
+</html>
